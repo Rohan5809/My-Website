@@ -1,0 +1,98 @@
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    
+    #navbar {
+        text-align: center;
+    }
+    
+    #nav-list {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    #list-item {
+        padding: 20px;
+        list-style: none;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    
+    .links {
+        text-decoration: none;
+        font-family: 'Mulish', sans-serif;
+        color: black;
+        top: 0;
+        padding: 8px;
+        opacity: 1;
+        position: relative;
+        transition: top ease 0.5s;
+    }
+    
+    .links:hover {
+        top: -10px;
+        color: white;
+        border-radius: 15px;
+        background-color: black;
+    }
+    
+    .main span {
+        top: 260px;
+        animation: typing 3s steps(19), trans 1s steps(19) infinite;
+        left: 510px;
+        overflow: hidden;
+        width: 19ch;
+        white-space: nowrap;
+        border-right: .05em solid;
+        font-weight: bolder;
+        font-size: 50px;
+        display: flex;
+        position: relative;
+        font-family: cursive;
+    }
+    
+    .lorem-text {
+        top: 260px;
+        left: 80px;
+        width: 90vw;
+        align-items: center;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        position: relative;
+        font-family: cursive;
+    }
+    
+    .main::before {
+        content: '';
+        background: url('/img/1.jpg') no-repeat center center/cover;
+        position: absolute;
+        opacity: 0.7;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+    
+    @keyframes typing {
+        0% {
+            width: 0ch;
+        }
+        50% {
+            width: 10ch;
+        }
+        100% {
+            width: 19ch;
+        }
+    }
+    
+    @keyframes trans {
+        50% {
+            border-color: transparent;
+        }
+    }
